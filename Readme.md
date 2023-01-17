@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Данил Князев](https://up.htmlacademy.ru/htmlcss/36/user/2261471).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
