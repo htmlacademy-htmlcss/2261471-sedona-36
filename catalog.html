@@ -61,8 +61,6 @@
         <section class="filter">
             <h2 class="visually-hidden">Фильтры гостиниц</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
 
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -93,26 +91,46 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="type-of-dwelling" value="hotel"
-                                checked>Гостиница
+                                <input class="control-input" type="radio" name="type-of-dwelling"
+                                value="hotel" checked>Гостиница
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="type-of-dwelling" value="motel">
-                                Мотель
+                                <input class="control-input" type="radio" name="type-of-dwelling"
+                                value="motel">Мотель
                             </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="control-input" type="radio" name="type-of-dwelling" value="apartments">
-                                Апартаменты
+                                <input class="control-input" type="radio" name="type-of-dwelling"
+                                value="apartments">Апартаменты
                             </label>
                         </li>
                     </ul>
                 </fieldset>
 
+                <button class="button" type="submit">Применить</button>
+                <button class="button" type="reset">Сбросить</button>
             </form>
+
+            <h2 class="search-results">Найдено гостиниц: 38</h2>
+            <select class="select-control" naria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+            </select>
+            <a class="button button-dark"href="#">
+                <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button"href="#">
+                <span class="visually-hidden">Показать другим видом</span>
+            </a>
+            <a class="button"href="#">
+                <span class="visually-hidden">Показать список</span>
+            </a>
+
+
 
         </section>
 
