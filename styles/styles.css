@@ -1,3 +1,7 @@
 body {
     background-color: tomato;
 }
+
+.pictures {
+    background-image: url(/images/index-background.jpg);
+}
