@@ -252,12 +252,31 @@ background-color: rgba(131, 179, 211, 0.12);
     text-transform: uppercase;
 }
 
-.results a {
+.results .button {
     color: #000000;
     background-color: #ffffff;
     border: 1px solid lightgrey;
 }
 
-.button-dark {
+.results .button-dark {
     border: 1px solid #000000;
+}
+
+.select-control {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.hotels-list {
+    font-size: 18px;
+    line-height: 21px;
+    }
+
+.hotel-card-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
 }
