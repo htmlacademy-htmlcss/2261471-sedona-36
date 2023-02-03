@@ -22,6 +22,15 @@ body {
     background-color: #ffffff;
 }
 
+.button {
+    color: #ffffff;
+    background-color: #756157;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
 .page-header {
     color: #000000;
     }
@@ -44,9 +53,8 @@ body {
     line-height: 20px;
     font-weight: 700;
     color: #ffffff;
-    background-color: #756157;
     text-transform: uppercase;
-    text-align: center;
+    padding: 8px 50px;
 }
 
 .hero-block {
@@ -65,8 +73,11 @@ body {
     text-align: center;
 }
 
-.advantages-list {
+.advantages {
     text-align: center;
+}
+
+.advantages-list {
     font-size: 18px;
     line-height: 21px;
     }
@@ -92,7 +103,7 @@ background-color: rgba(131, 179, 211, 0.12);
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.services-list {
+.services {
     text-align: center;
 }
 
@@ -109,11 +120,40 @@ background-color: rgba(131, 179, 211, 0.12);
 .services-name {
     font-size: 24px;
     line-height: 28px;
+    font-weight: 700;
     text-transform: uppercase;
-    }
+}
 
-.services-description {
+.services-item {
     font-size: 18px;
     line-height: 21px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
 
+.services-item:nth-child(2) {
+    background-color: #ffffff;
+}
+
+.main-search {
+    text-align: center;
+}
+
+.search-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-search a {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 8px 50px;
+}
+
+.newsletters {
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../images/background-subscribe.jpg;);
 }
