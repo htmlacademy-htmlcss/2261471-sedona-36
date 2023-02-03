@@ -23,12 +23,16 @@ body {
 }
 
 .button {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
     color: #ffffff;
     background-color: #756157;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     border-radius: 4px;
+    padding: 8px 50px;
 }
 
 .page-header {
@@ -252,13 +256,13 @@ background-color: rgba(131, 179, 211, 0.12);
     text-transform: uppercase;
 }
 
-.results .button {
+.button-display {
     color: #000000;
     background-color: #ffffff;
     border: 1px solid lightgrey;
 }
 
-.results .button-dark {
+.button-dark {
     border: 1px solid #000000;
 }
 
@@ -280,3 +284,27 @@ background-color: rgba(131, 179, 211, 0.12);
     color: #000000;
     text-decoration: none;
 }
+
+.button-favorite {
+    background-color: #82B3D3;
+    border: none;
+}
+
+.rating {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: #F2F2F2;
+}
+
+.button-in-favorites {
+    background-color: #7DB54F;
+    border: none;
+}
+
+.pagination-link {
+    color: #ffffff;
+    background-color: #82B3D3;
+}
+
+pagination-current
