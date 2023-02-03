@@ -74,6 +74,7 @@ body {
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
+    text-transform: uppercase;
 }
 
 .advantages-item:first-child,
@@ -89,4 +90,30 @@ background-color: rgba(131, 179, 211, 0.12);
 
 .advantages-item:nth-child(3) {
     background-color: rgba(131, 179, 211, 0.2);
+}
+
+.services-list {
+    text-align: center;
+}
+
+.services-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.services-name {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    }
+
+.services-description {
+    font-size: 18px;
+    line-height: 21px;
+
 }
