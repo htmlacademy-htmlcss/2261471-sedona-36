@@ -19,7 +19,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .button {
@@ -33,7 +33,12 @@ body {
 
 .page-header {
     color: #000000;
+    background-color: #ffffff;
     }
+
+main, .page-footer {
+    background-color: #ffffff;
+}
 
 .navigation-list {
     list-style-type: none;
