@@ -174,3 +174,12 @@ background-color: rgba(131, 179, 211, 0.12);
     background-color: #82B3D3;
     padding: 8px 50px;
 }
+
+.contacts-phone {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+
+}
