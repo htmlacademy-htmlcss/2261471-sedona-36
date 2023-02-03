@@ -244,3 +244,20 @@ background-color: rgba(131, 179, 211, 0.12);
     padding: 8px 50px;
     border: none;
 }
+
+.search-results {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.results a {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid lightgrey;
+}
+
+.button-dark {
+    border: 1px solid #000000;
+}
