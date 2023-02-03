@@ -155,5 +155,22 @@ background-color: rgba(131, 179, 211, 0.12);
 .newsletters {
     text-align: center;
     color: #ffffff;
-    background-image: url(../images/background-subscribe.jpg;);
+    background: url(../images/background-subscribe.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto;
+}
+
+.main-newsletters {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.newsletters-button {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    background-color: #82B3D3;
+    padding: 8px 50px;
 }
