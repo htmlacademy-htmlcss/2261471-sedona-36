@@ -183,6 +183,59 @@ background-color: rgba(131, 179, 211, 0.12);
     text-decoration: none;
 }
 
-.inner-header-title {
+.inner-header {
+    color: #ffffff;
+    }
 
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    font-weight: 700;
+}
+
+.hero-catalog {
+    background-image: url(../images/catalog-back.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.filter {
+    color: #ffffff;
+    background-color: tomato;
+}
+
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.catalog-filter-item {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.button-submit {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: #82B3D3;
+    padding: 8px 50px;
+    border: none;
+}
+
+.button-reset {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: rgba(131, 179, 211, 0);
+    padding: 8px 50px;
+    border: none;
 }
