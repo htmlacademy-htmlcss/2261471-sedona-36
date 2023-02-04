@@ -215,7 +215,7 @@ background-color: rgba(131, 179, 211, 0.12);
     background-color: #4682B4;
     background-image: url(../images/catalog-back.jpeg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
 }
 
 .breadcrumbs {
