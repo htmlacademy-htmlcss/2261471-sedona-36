@@ -22,6 +22,10 @@ body {
     background-color: #F2F2F2;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 .color-container {
     background-color: #ffffff;
     margin: 40px;
@@ -70,10 +74,20 @@ body {
 }
 
 .hero-block {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 485px;
+    background-color: #4682B4;
     background-image: url(../images/vector-hero.svg), url(../images/index-background.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-size: contain, 100% auto;
+    background-size: contain auto, contain ;
     background-position: bottom, top;
+}
+
+.logo-welcome {
+    padding-top: 51px;
+    padding-bottom: 82px;
 }
 
 .advantages-list-title {
