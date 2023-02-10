@@ -170,7 +170,8 @@ body {
 }
 
 .advantages-item {
-    min-width: 400px;
+    width: 400px;
+    height: 385px;
     color: #ffffff;
     background-color: #82B3D3;
 }
