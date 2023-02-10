@@ -45,7 +45,7 @@ body {
 .page-container {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    width: 1200px;
     min-height: 100%;
     margin: 0 auto;
     background-color: #ffffff;
@@ -307,6 +307,7 @@ body {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
+    margin: 0;
 }
 
 .hero-catalog {
@@ -315,6 +316,7 @@ body {
     background-image: url(../images/catalog-back.jpeg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding: 35px 70px 70px 70px;
 }
 
 .breadcrumbs {
@@ -323,10 +325,25 @@ body {
     color: #ffffff;
 }
 
+.catalog-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-filter-group {
+    width: 150px;
+    margin-right: 70px;
+    padding: 0;
+}
+
 .catalog-filter-title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+}
+
+.catalog-filter-list {
+    padding: 0;
 }
 
 .catalog-filter-item {
@@ -342,6 +359,7 @@ body {
     background-color: #82B3D3;
     padding: 8px 50px;
     border: none;
+    margin-left: 350px;
 }
 
 .button-reset {
@@ -353,17 +371,42 @@ body {
     border: none;
 }
 
+.results-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 70px 60px 70px;
+    align-items: center;
+}
+
 .search-results {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    width: 350px;
+
+}
+
+.select-control {
+    width: 292px;
+}
+
+.buttons-display {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+
 }
 
 .button-display {
     color: #000000;
     background-color: #ffffff;
     border: 1px solid lightgrey;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+
 }
 
 .button-dark {
@@ -379,6 +422,17 @@ body {
 .hotels-list {
     font-size: 18px;
     line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 70px 80px 70px;
+    padding: 0;
+
+}
+
+.hotel-card {
+    width: 300px;
+    border: 20px solid white;
 }
 
 .hotel-card-title {

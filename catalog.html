@@ -28,14 +28,14 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">
+                <span class="#">
                   Поиск
                 </span>
               </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Лайк
+                <span class="#">Лайк
                 </span>
               </a>
             </li>
@@ -47,7 +47,7 @@
         </nav>
       </header>
 
-      <main class="main-inner">
+      <main class="main-container main-inner">
         <div class="hero-catalog">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -117,21 +117,25 @@
         </div>
 
         <section class="results">
+          <div class="results-wrapper">
           <h2 class="search-results">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a class="button button-display button-dark" href="#">
+          <div class="buttons-display">
+          <a class="button-display button-dark" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button button-display" href="#">
+          <a class="button-display" href="#">
             <span class="visually-hidden">Показать другим видом</span>
           </a>
-          <a class="button button-display" href="#">
+          <a class="button-display" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
+        </div>
+        </div>
 
           <ul class="hotels-list">
             <li class="hotel-card">
@@ -230,6 +234,7 @@
       </main>
 
       <footer class="page-footer">
+        <div class="page-footer-container">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -258,6 +263,7 @@
           <img class="htmlacademy-logo" src="images/HTML Academy-logo.svg" width="114" height="32"
             alt="Лого html-academy">
         </a>
+        </div>
 
       </footer>
     </div>
