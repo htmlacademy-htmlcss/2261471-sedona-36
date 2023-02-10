@@ -331,7 +331,6 @@ body {
 }
 
 .catalog-filter-group {
-    width: 150px;
     margin-right: 70px;
     padding: 0;
 }
@@ -343,6 +342,7 @@ body {
 }
 
 .catalog-filter-list {
+    width: 150px;
     padding: 0;
 }
 
@@ -359,7 +359,7 @@ body {
     background-color: #82B3D3;
     padding: 8px 50px;
     border: none;
-    margin-left: 350px;
+
 }
 
 .button-reset {
@@ -432,7 +432,9 @@ body {
 
 .hotel-card {
     width: 300px;
-    border: 20px solid white;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
 .hotel-card-title {
