@@ -154,7 +154,7 @@ body {
 
 .advantages-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 21px 0;
     padding: 0;
     font-size: 18px;
@@ -166,6 +166,10 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+}
+
+.thumbnail {
+    display: block;
 }
 
 .advantages-item {
