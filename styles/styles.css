@@ -68,6 +68,7 @@ body {
     text-decoration: none;
     border-radius: 4px;
     padding: 8px 50px;
+    box-sizing: border-box;
 }
 
 .page-header {
@@ -137,7 +138,7 @@ body {
     background-color: #4682B4;
     background-image: url(../images/vector-hero.svg), url(../images/index-background.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-size: contain auto, contain;
+    background-size: cover auto, contain;
     background-position: bottom, top;
     margin-bottom: 69px;
 }
@@ -285,9 +286,19 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 96px auto 20px;
 }
 
-.main-search a {
+.search-title-description {
+    max-width: 600px;
+    margin: 0 auto 54px;
+}
+
+.button-search {
+    display: block;
+    width: 376px;
+    height: 52px;
+    margin: 0 auto 96px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -303,16 +314,37 @@ body {
     background-size: 100% auto;
 }
 
+
+
 .main-newsletters {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0 auto 20px;
+    padding-top: 96px;
+}
+
+.newsletters-description {
+    max-width: 480px;
+    margin: 0 auto 54px;
+}
+
+.newsletters-form {
+    display: flex;
+    justify-content: center;
+    width: 684px;
+    padding-bottom: 104px;
+    margin: 0 auto;
 }
 
 .field {
     color: #000000;
     background-color: #f2f2f2;
+    width: 452px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
 }
 
 .newsletters-button {
@@ -322,6 +354,8 @@ body {
     background-color: #82B3D3;
     padding: 8px 50px;
     border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .page-footer-container {
