@@ -109,6 +109,7 @@ body {
 }
 
 .navigation-user {
+    justify-content: flex-end;;
     max-width: 280px;
     margin: 0;
     padding: 0;
@@ -126,7 +127,9 @@ body {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 8px 50px;
+    box-sizing: border-box;
+    width: 160px;
+    padding: 8px 34px;
     margin: 14px 0;
 }
 
@@ -377,6 +380,7 @@ body {
     width: 48px;
     height: 40px;
     margin: 0;
+    padding: 0;
 
 
 }
