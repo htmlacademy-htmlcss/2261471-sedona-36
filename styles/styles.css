@@ -386,15 +386,14 @@ body {
 }
 
 .button-socials {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 48px;
     height: 40px;
     margin: 0;
-    margin-right: auto;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top: 13px;
-    }
+
+}
 
 
 
