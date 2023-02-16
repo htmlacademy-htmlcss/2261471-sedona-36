@@ -582,11 +582,11 @@ body {
 }
 
 .hotels-list {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 20px;
     font-size: 18px;
     line-height: 21px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     margin-bottom: 80px;
@@ -595,7 +595,10 @@ body {
 }
 
 .hotel-card {
-    width: 300px;
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 212px 28px 21px 36px 37px;
+    row-gap: 16px;;
     padding: 20px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
