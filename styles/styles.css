@@ -49,7 +49,7 @@ body {
     min-height: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    box-shadow: 0px 0px 15px 0px #00000033;
+    box-shadow: 0 0 15px 0 #00000033;
 }
 
 .main-container {
@@ -90,6 +90,7 @@ body {
 }
 
 .navigation-link {
+    position: relative;
     display: block;
     padding: 20px 16px;
     font-size: 20px;
@@ -99,6 +100,16 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     box-sizing: border-box;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    right: 16px;
+    bottom: -1px;
+    left: 16px;
+    height: 2px;
+    background-color: #756257;
+    content: "";
 }
 
 .navigation-logo {
@@ -122,6 +133,28 @@ body {
     min-height: 64px;
 }
 
+.header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 44px;
+    min-height: 64px;
+    background-image: url("../images/icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 44px;
+    min-height: 64px;
+    background-image: url("../images/icons/like.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .button-like {
     font-size: 16px;
     line-height: 20px;
@@ -132,6 +165,7 @@ body {
     width: 160px;
     padding: 8px 34px;
     margin: 14px 0;
+    margin-left: 20px;
 }
 
 .hero-block {
@@ -648,16 +682,15 @@ body {
 }
 
 .button-favorite {
-    display: block;
+    display: inline-block;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     background-color: #82B3D3;
     border: none;
     justify-self: center;
     width: 140px;
-    padding: 0;
-
-
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 .rating-stars {
