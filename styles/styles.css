@@ -222,6 +222,7 @@ body {
 }
 
 .advantages-title {
+    position: relative;
     width: 175px;
     margin: auto;
     padding-top: 112px;
@@ -231,10 +232,29 @@ body {
     text-transform: uppercase;
 }
 
+.advantages-title::before {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    margin-left: -30px;
+    background-color: #ffffff;
+    content: "";
+}
+
+.second-row .advantages-title::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .advantages-description {
     width: 230px;
     margin: 0 auto;
     padding-bottom: 102px;
+}
+
+.second-row .advantages-description {
+    color: #333333;
 }
 
 .thumbnail {
