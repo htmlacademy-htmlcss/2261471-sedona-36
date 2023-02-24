@@ -68,6 +68,7 @@ body {
     text-decoration: none;
     border-radius: 4px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .page-header {
@@ -468,6 +469,17 @@ body {
 
 }
 
+.footer-social-icon:hover path {
+    fill: #68A2CA;
+}
+
+.footer-social-icon:focus path {
+    fill: #68A2CA;
+}
+
+.footer-social-icon:active path {
+    fill: rgba(104, 162, 202, 0.3);
+}
 
 
 .contacts-phone {
@@ -482,8 +494,32 @@ body {
     text-align: center;
 }
 
+.contacts-phone:hover {
+    color: #756157;
+}
+
+.contacts-phone:focus {
+    color: #756157;
+}
+
+.contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
 .htmlacademy-link {
     margin: 8px 0 8px auto;
+}
+
+.htmlacademy-logo:hover path {
+    fill: #756157;
+}
+
+.htmlacademy-logo:focus path{
+    fill: #756157;
+}
+
+.htmlacademy-logo:active path{
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .inner-header {
