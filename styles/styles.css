@@ -175,7 +175,7 @@ body {
     width: auto;
     height: 485px;
     background-color: #4682B4;
-    background-image: url(../images/vector-hero.svg), url(../images/index-background.jpg);
+    background-image: url("../images/vector-hero.svg"), url("../images/index-background.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: cover auto, contain;
     background-position: bottom, top;
@@ -388,7 +388,7 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #4682B4;
-    background-image: url(../images/background-subscribe.jpg);
+    background-image: url("../images/background-subscribe.jpg");
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto;
 }
@@ -531,12 +531,13 @@ body {
     line-height: 78px;
     font-weight: 700;
     margin: 0;
+    margin-bottom: 8px;
 }
 
 .hero-catalog {
     color: #ffffff;
     background-color: #4682B4;
-    background-image: url(../images/catalog-back.jpeg);
+    background-image: url("../images/catalog-back.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 35px 70px 70px 70px;
@@ -552,8 +553,33 @@ body {
     list-style-type: none;
 }
 
+.breadcrumbs-link-home {
+    display: inline-block;
+    text-align: center;
+    min-width: 12px;
+    min-height: 12px;
+    background-image: url("../images/icons/home.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .breadcrumbs-item {
+    position: relative;
     margin-right: 28px;
+}
+
+.breadcrumbs-item::after {
+    position: absolute;
+    background-image: url("../images/icons/arrow.svg");
+    top: 5px;
+    right: -20px;
+    width: 8px;
+    height: 11px;
+    content: "";
+}
+
+.breadcrumbs-item:last-child::after {
+    content: none;
 }
 
 .breadcrumbs-link {
