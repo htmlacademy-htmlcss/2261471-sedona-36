@@ -553,15 +553,7 @@ body {
     list-style-type: none;
 }
 
-.breadcrumbs-link-home {
-    display: inline-block;
-    text-align: center;
-    min-width: 12px;
-    min-height: 12px;
-    background-image: url("../images/icons/home.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 .breadcrumbs-item {
     position: relative;
@@ -586,6 +578,18 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
+
+
+
+.breadcrumbs-link-home:hover path{
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-home:active path{
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+
 
 .catalog-filter {
     display: flex;
@@ -805,6 +809,20 @@ body {
 .rating-stars {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
+}
+
+.rating-star-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rating-star-item {
+    margin-right: 6px;
+
 }
 
 .rating {
