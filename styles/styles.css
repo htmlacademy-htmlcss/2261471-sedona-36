@@ -811,7 +811,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .results-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -823,19 +822,38 @@ input[type=number]::-webkit-outer-spin-button {
     text-transform: uppercase;
     width: 350px;
     margin: 0;
-
+    margin-right: auto;
 }
 
 .select-control {
     width: 292px;
+    font: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    padding: 14px 20px;
+    padding-right: 53px;
+    border: 2px solid #E5E5E5;
+    background-color: #ffffff;
+    appearance: none;
+    margin-right: 70px;
+    background-image: url(../images/icons/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.select-control:hover {
+    border-color: #68A2CA;
+}
+
+.select-control:active {
+    border-color: #3F5E72;
 }
 
 .buttons-view {
     display: flex;
     justify-content: space-between;
     width: 160px;
-
-
 }
 
 .button-view-toggle {
@@ -867,12 +885,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .button-dark {
     border: 2px solid #000000;
-}
-
-.select-control {
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
 }
 
 .hotels-list {
