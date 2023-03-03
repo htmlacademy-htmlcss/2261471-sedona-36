@@ -1054,6 +1054,15 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: 8px;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+    background-color: #68A2CA;
+}
+
+.pagination-link:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-item span {
     display: inline-block;
     padding: 16px 20px;
