@@ -634,6 +634,55 @@ body {
     margin-bottom: 0;
 }
 
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.control:hover {
+    opacity: 60%;
+}
+
+.control:active {
+    opacity: 30%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    background-image: url("../images/icons/mark.svg");
+    width: 12px;
+    height: 10px;
+    content: "";
+  }
+
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::after {
+    position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
 .range-scale {
     position: relative;
     height: 4px;
