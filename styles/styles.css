@@ -27,7 +27,7 @@ body {
     color: #333333;
     background-color: #F2F2F2;
     margin: 0;
-    }
+}
 
 .visually-hidden {
     position: absolute;
@@ -123,7 +123,8 @@ body {
 }
 
 .navigation-user {
-    justify-content: flex-end;;
+    justify-content: flex-end;
+    ;
     max-width: 280px;
     margin: 0;
     padding: 0;
@@ -175,7 +176,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    }
+}
 
 .button-like {
     font-size: 16px;
@@ -469,6 +470,7 @@ body {
     padding: 40px 70px 30px 70px;
 
 }
+
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
@@ -540,11 +542,11 @@ body {
     fill: #756157;
 }
 
-.htmlacademy-logo:focus path{
+.htmlacademy-logo:focus path {
     fill: #756157;
 }
 
-.htmlacademy-logo:active path{
+.htmlacademy-logo:active path {
     fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -607,11 +609,11 @@ body {
 
 
 
-.breadcrumbs-link-home:hover path{
+.breadcrumbs-link-home:hover path {
     fill: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link-home:active path{
+.breadcrumbs-link-home:active path {
     fill: rgba(255, 255, 255, 0.6);
 }
 
@@ -619,7 +621,7 @@ body {
 
 .catalog-filter {
     display: flex;
-    }
+}
 
 .catalog-filter-group {
     padding: 0;
@@ -686,7 +688,7 @@ body {
     width: 12px;
     height: 10px;
     content: "";
-  }
+}
 
 .control-input[type="radio"] + .control-mark {
     border-radius: 50%;
@@ -694,13 +696,13 @@ body {
 
 .control-input[type="radio"]:checked + .control-mark::after {
     position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
-  background-color: #3F5E72;
-  border-radius: 50%;
-  content: "";
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    border-radius: 50%;
+    content: "";
 }
 
 .range-scale {
@@ -754,7 +756,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    appearance: textfield ;
+    appearance: textfield;
     box-sizing: border-box;
     border: none;
 
@@ -762,8 +764,8 @@ body {
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0;
+    appearance: none;
+    margin: 0;
 }
 
 .range-from {
@@ -799,10 +801,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .buttons-filter {
     margin-left: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 56px;
-    }
+}
 
 .button-submit {
     font-size: 16px;
@@ -814,7 +816,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: auto;
     margin-bottom: 32px;
 
-    }
+}
 
 .button-reset {
     font-size: 16px;
@@ -823,7 +825,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgba(131, 179, 211, 0);
     padding: 8px 50px;
     border: none;
-    }
+}
 
 .results {
     margin: 50px 70px 60px;
@@ -1097,4 +1099,83 @@ input[type=number]::-webkit-outer-spin-button {
     color: #000000;
     background-color: #ffffff;
     background-image: none;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+.modal-search {
+    width: 717px;
+
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 64px;
+    right: 52px;
+    width: 52px;
+    height: 52px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 50%;
+    background-image: url("../images/icons/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 64px;
+}
+
+.modal-search-form {}
+
+.field-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 48px;
+
+}
+
+.search-form-field {
+    position: relative;
+
+}
+
+.search-form-field + .comment {
+    position: absolute;
+    bottom: -4px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.comment-error {
+    color: #FF5757;
 }
