@@ -206,8 +206,8 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="field-group field-date-arrival">
-              <label class="date-arrival" for="date-arrival">Дата заезда:</label>
+
+            <label class="date-arrival" for="date-arrival">Дата заезда:</label>
             <div class="input-wrapper">
               <input class="search-form-field" type="text" name="date-arrival" id="date-arrival"
                 placeholder="27 апреля 2020">
@@ -215,9 +215,7 @@
                 <span class="comment comment-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
-          </div>
-            <div class="field-group field-date-departure">
-              <label class="date-departure" for="date-departure">Дата выезда:</label>
+            <label class="date-departure" for="date-departure">Дата выезда:</label>
             <div class="input-wrapper">
               <input class="search-form-field" type="text" name="date-departure" id="date-departure"
                 placeholder="1 сентября 2023">
@@ -225,38 +223,44 @@
                 <span class="comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
-          </div>
-            <div class="group-peoples">
-              <div class="field-group adults">
-                <label class="peoples field-adults" for="count-adults">Взрослые:</label>
-                  <div class="number-wrapper">
-                    <input class="search-form-field count-peoples" id="count-adults" type="number" name="adults"
-                      value="2">
-                    <div class="number-wrapper-button">
-                      <button class="button-modal minus"></button>
-                      <button class="button-modal plus"></button>
-                    </div>
-                  </div>
+
+            <label class="peoples field-adults" for="count-adults">Взрослые:</label>
+            <div class="number-wrapper">
+              <input class="search-form-field count-peoples" id="count-adults" type="number" name="adults" value="2">
+              <div class="number-wrapper-button">
+                <button class="button-modal minus"></button>
+                <button class="button-modal plus"></button>
               </div>
-              <div class="field-group kids">
-                <label class="peoples field-kids" for="count-kids">Дети:</label>
-                  <button class="info">
-                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                  </button>
-                  <div class="number-wrapper">
-                    <input class="search-form-field count-peoples" type="number" id="count-kids" name="kids" value="2">
-                    <div class="number-wrapper-button">
-                      <button class="button-modal minus"></button>
-                      <button class="button-modal plus"></button>
-                    </div>
-                  </div>
-                </div>
+            </div>
+             <div class="kids-wrapper">
+            <label class="peoples field-kids" for="count-kids">Дети:</label>
+            <span class="tooltip">
+            <button class="tooltip-toggle">
+              <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+            </button>
+            <span class="tooltip-text">Укажите количество детей,
+              которые будут с вами, возраст которых от 6 до 18 лет.
+              Дети до 6 лет размещаются бесплатно.
+            </span>
+            </span>
+          </div>
+            <div class="number-wrapper">
+              <input class="search-form-field count-peoples" type="number" id="count-kids" name="kids" value="2">
+              <div class="number-wrapper-button">
+                <button class="button-modal minus"></button>
+                <button class="button-modal plus"></button>
+              </div>
             </div>
             <button class="button modal-search-submit" type="submit">Найти</button>
           </form>
         </section>
       </div>
+    </div>
 
+    </div>
     </div>
   </body>
 

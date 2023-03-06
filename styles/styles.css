@@ -1154,6 +1154,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .modal-search-form {
+    display: grid;
+    grid-template-columns: 119px 110px 183px 110px;
+    row-gap: 48px;
+    column-gap: 18px;
+    align-items: center;
     font-family: inherit;
     font-size: 20px;
     line-height: 24px;
@@ -1161,28 +1166,19 @@ input[type=number]::-webkit-outer-spin-button {
     color: #000000;
 }
 
-.field-group {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 48px;
-
+.date-arrival {
+    grid-column: 1 / 2;
 }
 
-
-.group-peoples {
-    display: flex;
-    justify-content: space-between;
+.input-wrapper {
+    position: relative;
+    grid-column: 2 / 5;
 }
 
-.adults {
-    width: 247px;
+.modal-search-submit {
+    grid-column: 1 / -1;
 }
 
-.kids {
-    width: 242px;
-}
 
 .button-modal {
     width: 40px;
@@ -1218,10 +1214,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-.input-wrapper {
-    position: relative;
-}
-
 .input-comment {
     position: absolute;
     bottom: -25px;
@@ -1254,4 +1246,57 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.kids-wrapper {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.tooltip-toggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    display: block;
+
+}
+
+.tooltip-icon {
+    width: 100%;
+    height: 100%;
+    color:rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+
+.tooltip-text {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 15px 18px;
+    border-radius: 10px;
+    width: 256px;
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 15px;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+    display: block;
 }
