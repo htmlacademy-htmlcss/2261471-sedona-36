@@ -1221,6 +1221,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
+.dates {
+    background-image: url("../images/icons/dates.svg");
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+}
+
 .input-comment {
     position: absolute;
     bottom: -25px;
