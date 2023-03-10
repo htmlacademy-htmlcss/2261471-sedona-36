@@ -73,6 +73,25 @@ body {
     cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+    background-color: #615048;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+    background-color: #68A2CA;
+}
+
+.button:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.button:disabled {
+    color: #ffffff;
+    background-color: rgba(229, 229, 229, 1);
+}
+
 .page-header {
     color: #000000;
 }
@@ -469,6 +488,8 @@ body {
     border-bottom-left-radius: 0;
 }
 
+
+
 .page-footer-container {
     display: flex;
     width: 1060px;
@@ -677,9 +698,17 @@ body {
     background-color: #ffffff;
 }
 
+.control-mark:focus {
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+
+}
+
 .control:hover {
     opacity: 60%;
 }
+
+
 
 .control:active {
     opacity: 30%;
@@ -832,6 +861,24 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
 }
 
+.button-reset:hover {
+    background-color: transparent;
+    opacity: 60%;
+}
+
+.button-reset:active {
+    background-color: transparent;
+    opacity: 30%;
+}
+
+.button-reset:disabled {
+    opacity: 10%;
+}
+
+.button-reset:focus {
+    background-color: transparent;
+}
+
 .results {
     margin: 50px 70px 60px;
 }
@@ -875,6 +922,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .select-control:active {
     border-color: #3F5E72;
+}
+
+.select-control:disabled {
+   opacity: 30%;
 }
 
 .buttons-view {
@@ -1052,6 +1103,15 @@ input[type=number]::-webkit-outer-spin-button {
     grid-row: 4 / 5;
     background-color: #7DB54F;
     border: none;
+}
+
+.button-in-favorites:hover,
+.button-in-favorites:hover {
+    background-color: #6C9E42;
+}
+
+.button-in-favorites:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination {
