@@ -698,11 +698,10 @@ body {
     background-color: #ffffff;
 }
 
-.control-mark:focus {
-    outline: 3px solid #83B3D3;
-    border-radius: 4px;
-
-}
+.control-mark:focus,
+.control-mark:focus-visible {
+    box-shadow: 0 0 0 3px #83B3D3;
+  }
 
 .control:hover {
     opacity: 60%;
@@ -763,8 +762,14 @@ body {
     cursor: pointer;
 }
 
+.range-toggle:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
+}
+
 .range-toggle:active {
-    border: 2px solid #83B3D3;
+    box-shadow: 0 0 0 2px #83B3D3;
+    outline: none;
 }
 
 .toggle-min {
@@ -784,16 +789,33 @@ body {
 
 .range-input {
     position: relative;
-    width: 143px;
-    padding: 12px 20px;
+    width: 139px;
+    padding: 10px 18px;
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
+    background-color: #f2f2f2;
     appearance: textfield;
+    border: 2px solid transparent;
     box-sizing: border-box;
-    border: none;
 
+}
+
+.range-input:hover {
+    background-color: #E6E6E6;
+}
+
+.range-input:focus,
+.range-input:focus-visible {
+    background-color: #E6E6E6;
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
+}
+
+.range-input:active {
+    border-color: #000000;
+    outline: none;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -914,6 +936,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url(../images/icons/arrow-select.svg);
     background-repeat: no-repeat;
     background-position: right 20px center;
+    outline: none;
 }
 
 .select-control:hover {
