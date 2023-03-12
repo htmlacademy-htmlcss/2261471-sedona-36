@@ -1316,23 +1316,30 @@ input[type=number]::-webkit-outer-spin-button {
     color: #000000;
     width: 440px;
     border-radius: 4px;
-    padding: 12px 48px 12px 20px;
+    padding: 10px 46px 10px 18px;
     border: none;
     background-color: #F2F2F2;
     box-sizing: border-box;
 
 }
 
-
 .dates {
     background-image: url("../images/icons/dates.svg");
     background-repeat: no-repeat;
     background-position: right 22px center;
+    border: 2px solid transparent;
 }
 
-input::placeholder {
+.dates::placeholder {
     color: rgba(0, 0, 0, 0.6);
+}
 
+.dates:hover {
+    background-color: #E6E6E6;
+}
+
+.dates:active {
+    border-color: #000000;
 }
 
 
