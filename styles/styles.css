@@ -141,6 +141,7 @@ body {
     height: 2px;
     background-color: #756257;
     content: "";
+    z-index: 1;
 }
 
 .navigation-logo {
@@ -148,6 +149,7 @@ body {
     margin-right: 28px;
     margin-bottom: -6px;
     position: relative;
+    z-index: 1;
 
 }
 
@@ -221,16 +223,29 @@ body {
 }
 
 .hero-block {
+    position: relative;
     display: flex;
     justify-content: center;
     width: auto;
     height: 485px;
     background-color: #4682B4;
-    background-image: url("../images/vector-hero.svg"), url("../images/index-background.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover auto, contain;
-    background-position: bottom, top;
+    background-image: url("../images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:  top;
     margin-bottom: 69px;
+}
+
+.hero-block::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../images/vector-hero.svg");
+
+
 }
 
 .logo-welcome {
@@ -277,7 +292,7 @@ body {
     position: relative;
     width: 175px;
     margin: auto;
-    padding-top: 112px;
+    padding-top: 102px;
     margin-bottom: 62px;
     font-size: 24px;
     line-height: 28px;
@@ -293,6 +308,10 @@ body {
     margin-left: -30px;
     background-color: #ffffff;
     content: "";
+}
+
+.second-row .advantages-title {
+    padding-top: 112px;
 }
 
 .second-row .advantages-title::before {
@@ -311,11 +330,12 @@ body {
 
 .thumbnail {
     display: block;
+
 }
 
 .advantages-item {
     width: 400px;
-    height: 385px;
+    min-height: 385px;
     color: #ffffff;
     background-color: #82B3D3;
 }
@@ -330,6 +350,8 @@ body {
     flex-direction: row-reverse;
     width: 100%;
 }
+
+
 
 .advantages-content {
     margin: auto;
@@ -381,7 +403,7 @@ body {
     line-height: 21px;
     background-color: rgba(131, 179, 211, 0.12);
     width: 400px;
-    height: 385px;
+    min-height: 385px;
 }
 
 .services-name {
@@ -400,7 +422,8 @@ body {
 
 .services-description {
     max-width: 230px;
-    margin: 0 auto auto;
+    margin: 0 auto ;
+    padding-bottom: 81px;
 }
 
 .white {
@@ -412,6 +435,7 @@ body {
 }
 
 .search-title {
+    max-width: 600px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -427,7 +451,7 @@ body {
 .button-search {
     display: block;
     width: 376px;
-    height: 52px;
+    min-height: 52px;
     margin: 0 auto 96px;
     font-size: 20px;
     line-height: 36px;
@@ -453,6 +477,7 @@ body {
     text-transform: uppercase;
     margin: 0 auto 20px;
     padding-top: 96px;
+    max-width: 480px;
 }
 
 .newsletters-description {
@@ -506,12 +531,18 @@ body {
 
 }
 
+.footer-social {
+    margin-right: auto;
+    max-width: 290px;
+}
+
 .footer-social-list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin: 5px auto 5px 0;
-    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
     list-style-type: none;
 }
 
@@ -544,6 +575,12 @@ body {
     fill: rgba(104, 162, 202, 0.3);
 }
 
+.phone-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
 
 .contacts-phone {
     font-size: 40px;
@@ -551,10 +588,11 @@ body {
     font-weight: 400;
     color: #000000;
     text-decoration: none;
-    width: 720px;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-right: 10px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .contacts-phone:hover {
@@ -608,6 +646,8 @@ body {
 
 .breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
     margin: 0;
     margin-bottom: 40px;
     padding: 0;
@@ -890,6 +930,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: rgba(131, 179, 211, 0);
     padding: 8px 50px;
     border: none;
+    margin-bottom: 32px;
 }
 
 .button-reset:hover {
@@ -1023,7 +1064,7 @@ input[type=number]::-webkit-outer-spin-button {
 .hotel-card {
     display: grid;
     grid-template-columns: 140px 140px;
-    grid-template-rows: 212px 28px 21px 36px 37px;
+    grid-template-rows: auto auto auto auto;
     row-gap: 16px;
     column-gap: 20px;
     padding: 20px;
@@ -1149,29 +1190,38 @@ input[type=number]::-webkit-outer-spin-button {
 
 .pagination {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1060px;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .pagination-item {
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .pagination-link {
+    min-width: 60px;
+    min-height: 60px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
     color: #ffffff;
     background-color: #82B3D3;
     display: inline-block;
-    width: 60px;
-    height: 60px;
     border-radius: 4px;
     text-decoration: none;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 17px;
-    margin-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 .pagination-link:hover,
@@ -1183,12 +1233,19 @@ input[type=number]::-webkit-outer-spin-button {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-item span {
+.text-empty {
     display: inline-block;
     padding: 16px 20px;
 }
 
 .pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
     color: #000000;
     background-color: #F2F2F2;
 }
