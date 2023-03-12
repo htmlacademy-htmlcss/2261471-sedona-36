@@ -124,6 +124,14 @@ body {
     box-sizing: border-box;
 }
 
+.navigation-link:hover {
+    opacity: 60%;
+}
+
+.navigation-link:active {
+    opacity: 30%;
+}
+
 .navigation-link-current::before {
     position: absolute;
     right: 16px;
@@ -167,14 +175,6 @@ body {
     background-position: center;
 }
 
-.header-search:hover {
-    opacity: 60%;
-}
-
-.header-search:active {
-    opacity: 30%;
-}
-
 .header-like {
     position: relative;
     display: flex;
@@ -185,14 +185,6 @@ body {
     background-image: url("../images/icons/like.svg");
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.header-like:hover {
-    opacity: 60%;
-}
-
-.header-like:active {
-    opacity: 30%;
 }
 
 .like-count {
@@ -489,8 +481,8 @@ body {
     line-height: 24px;
 }
 
-.field:placeholder-shown {
-    color: #000000;
+.field::placeholder {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .newsletters-button {
