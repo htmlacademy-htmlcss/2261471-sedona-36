@@ -43,6 +43,10 @@ body {
     overflow: hidden;
 }
 
+input:disabled {
+    opacity: 30%;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
