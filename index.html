@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -89,7 +90,7 @@
             </li>
             <li class="advantages-item item-wide-reverse">
               <div class="advantages-content">
-                <h3 class="advantages-title">Там есть
+                <h3 class="advantages-title">Там есть<br>
                   мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
@@ -103,20 +104,20 @@
           <ul class="services-list">
             <li class="services-item">
               <h3 class="services-name">Жильё</h3>
-              <img class="services-pic" src="images/Cervices-icon/house.svg" width="75" height="72" alt="Домик">
-              <p class="services-description">Рекомендуем пожить в настоящем мотеле,
+              <img class="services-pic" src="images/сervices-icon/house.svg" width="75" height="72" alt="Домик.">
+              <p class="services-description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>
                 всё как в кино!</p>
             </li>
             <li class="services-item white">
               <h3 class="services-name">Еда</h3>
-              <img class="services-pic" src="images/Cervices-icon/food.svg" width="75" height="72" alt="Бургер">
-              <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <img class="services-pic" src="images/сervices-icon/food.svg" width="75" height="72" alt="Бургер.">
+              <p class="services-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="services-item">
               <h3 class="services-name">Сувениры</h3>
-              <img class="services-pic" src="images/Cervices-icon/gift.svg" width="75" height="72"
-                alt="Коробка с подарком">
-              <p class="services-description">Не только китайского,
+              <img class="services-pic" src="images/сervices-icon/gift.svg" width="75" height="72"
+                alt="Коробка с подарком.">
+              <p class="services-description">Не только китайского,<br>
                 но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -137,7 +138,7 @@
             <label for="newsletter-email"><span class="visually-hidden">Email</span></label>
             <input class="field" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email" type="email"
               required>
-            <button class="button newsletters-button" type="submit">Подписаться</button>
+            <button class="button button-blue newsletters-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -183,9 +184,11 @@
               </li>
             </ul>
           </section>
-          <h2 class="visually-hidden">Контактный телефон</h2>
-          <a class="contacts-phone" href="tel:+78128121212">
-            +7 (812) 812-12-12</a>
+          <section class="phone-wrapper">
+            <h2 class="visually-hidden">Контактный телефон</h2>
+            <a class="contacts-phone" href="tel:+78128121212">
+              +7 (812) 812-12-12</a>
+          </section>
           <h2 class="visually-hidden">Сайт разработчика</h2>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
             <svg class="htmlacademy-logo" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -202,6 +205,11 @@
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+              fill="black" />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -210,7 +218,7 @@
             <label class="date-arrival" for="date-arrival">Дата заезда:</label>
             <div class="input-wrapper">
               <input class="search-form-field dates" type="text" name="date-arrival" id="date-arrival"
-                placeholder="27 апреля 2020">
+                placeholder="Укажите дату" value="27 апреля 2020">
               <div class="input-comment">
                 <span class="comment comment-error">Мы не можем отправить вас в прошлое.</span>
               </div>
@@ -218,7 +226,7 @@
             <label class="date-departure" for="date-departure">Дата выезда:</label>
             <div class="input-wrapper">
               <input class="search-form-field dates" type="text" name="date-departure" id="date-departure"
-                placeholder="1 сентября 2023">
+                placeholder="Укажите дату" value="1 сентября 2023">
               <div class="input-comment">
                 <span class="comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
@@ -228,40 +236,59 @@
             <div class="number-wrapper">
               <input class="search-form-field count-peoples" id="count-adults" type="number" name="adults" value="2">
               <div class="number-wrapper-button">
-                <button class="button-modal minus"></button>
-                <button class="button-modal plus"></button>
+                <button class="button-modal" type="button">
+                  <svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </button>
+                <button class="button-modal" type="button">
+                  <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </button>
               </div>
             </div>
-             <div class="kids-wrapper">
-            <label class="peoples field-kids" for="count-kids">Дети:</label>
-            <span class="tooltip">
-            <button class="tooltip-toggle" aria-labelledby="tooltip-count-kids">
-              <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
-                </svg>
-            </button>
-            <span class="tooltip-text" role="tooltip" id="tooltip-count-kids">Укажите количество детей,
-              которые будут с вами, возраст которых от 6 до 18 лет.
-              Дети до 6 лет размещаются бесплатно.
-            </span>
-            </span>
-          </div>
+            <div class="kids-wrapper">
+              <label class="peoples field-kids" for="count-kids">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" aria-labelledby="tooltip-count-kids" type="button">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-count-kids">Укажите количество детей,
+                  которые будут с вами, возраст которых от 6 до 18 лет.
+                  Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </div>
             <div class="number-wrapper">
               <input class="search-form-field count-peoples" type="number" id="count-kids" name="kids" value="2">
               <div class="number-wrapper-button">
-                <button class="button-modal minus"></button>
-                <button class="button-modal plus"></button>
+                <button class="button-modal" type="button">
+                  <svg class="minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </button>
+                <button class="button-modal" type="button">
+                  <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </button>
               </div>
             </div>
-            <button class="button modal-search-submit" type="submit">Найти</button>
+            <button class="button button-blue modal-search-submit" type="submit">Найти</button>
           </form>
         </section>
       </div>
     </div>
 
-    </div>
-    </div>
   </body>
 
 </html>
