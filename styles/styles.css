@@ -408,6 +408,24 @@
     min-height: 385px;
   }
 
+  .house {
+    background-image: url("../images/сervices-icon/house.svg");
+    background-repeat: no-repeat;
+    background-position: center top 81px;
+  }
+
+  .food {
+    background-image: url("../images/сervices-icon/food.svg");
+    background-repeat: no-repeat;
+    background-position: center top 82px;
+  }
+
+  .gift {
+    background-image: url("../images/сervices-icon/gift.svg");
+    background-repeat: no-repeat;
+    background-position: center top 79px;
+  }
+
   .services-name {
     font-size: 24px;
     line-height: 28px;
@@ -415,14 +433,10 @@
     text-transform: uppercase;
     max-width: 230px;
     margin: 0 auto 30px;
+    padding-top: 183px;
   }
 
-  .services-pic {
-    order: -1;
-    margin: 81px auto 30px;
-  }
-
-  .services-description {
+    .services-description {
     max-width: 230px;
     margin: 0 auto;
     padding-bottom: 81px;
@@ -1027,6 +1041,24 @@
     border-radius: 4px;
     box-sizing: border-box;
     cursor: pointer;
+  }
+
+  .display {
+    background-image: url("../images/icons/display.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .table {
+    background-image: url("../images/icons/table.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .rows {
+    background-image: url("../images/icons/rows.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .button-view-toggle:hover {
