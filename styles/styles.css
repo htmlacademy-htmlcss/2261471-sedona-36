@@ -1446,6 +1446,11 @@
     height: 48px;
     text-align: center;
     padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    -webkit-appearance: none;
+            appearance: none;
+    -moz-appearance: textfield;
     box-sizing: border-box;
   }
 
