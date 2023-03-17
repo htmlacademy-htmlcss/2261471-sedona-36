@@ -1422,6 +1422,14 @@
     fill-opacity: 30%;
   }
 
+  .button-minus {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .button-plus {
+    border-radius: 0 4px 4px 0;
+  }
+
   .search-form-field {
     font-family: inherit;
     font-weight: 700;
@@ -1473,29 +1481,20 @@
     color: #ff5757;
   }
 
+  .number-wrapper {
+    display: flex;
+  }
+
   .count-peoples {
-    width: 110px;
+    width: 31px;
     height: 48px;
     text-align: center;
-    padding: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 5px;
     -webkit-appearance: none;
             appearance: none;
     -moz-appearance: textfield;
     box-sizing: border-box;
-  }
-
-  .number-wrapper {
-    position: relative;
-  }
-
-  .number-wrapper-button {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    border-radius: 0;
   }
 
   .kids-wrapper {
