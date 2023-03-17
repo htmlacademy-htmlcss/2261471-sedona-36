@@ -95,6 +95,7 @@
   .button-blue:focus,
   .button-blue:focus-visible {
     background-color: #68a2ca;
+    outline: none;
   }
 
   .button:active {
@@ -1414,16 +1415,27 @@
     justify-content: center;
     width: 40px;
     height: 48px;
+    padding: 14px 9px;
     color: transparent;
     background-color: #f2f2f2;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
+    outline: none;
+
   }
 
   .button-modal:hover path {
     fill: #000000;
     fill-opacity: 1;
+  }
+
+  .button-modal:focus,
+  .button-modal:focus-visible {
+    fill: #000000;
+    fill-opacity: 1;
+    border: 3px solid #82b3d3;
+    border-radius: 4px;
+
   }
 
   .button-modal:active path {
@@ -1451,6 +1463,22 @@
     border: none;
     background-color: #f2f2f2;
     box-sizing: border-box;
+    outline: none;
+  }
+
+
+  .search-form-field:hover {
+    background-color: #e6e6e6;
+  }
+
+  .search-form-field:focus,
+  .search-form-field:focus-visible {
+    background-color: #e6e6e6;
+    box-shadow: 0 0 0 3px #83b3d3;
+  }
+
+  .search-form-field:active {
+    border-color: #000000;
   }
 
   .dates {
@@ -1458,19 +1486,13 @@
     background-repeat: no-repeat;
     background-position: right 22px center;
     border: 2px solid transparent;
+    outline: none;
   }
 
   .dates::placeholder {
     color: rgba(0, 0, 0, 0.6);
   }
 
-  .dates:hover {
-    background-color: #e6e6e6;
-  }
-
-  .dates:active {
-    border-color: #000000;
-  }
 
 
   .input-comment {
