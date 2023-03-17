@@ -85,12 +85,15 @@
   }
 
   .button:hover,
-  .button:focus {
+  .button:focus,
+  .button:focus-visible {
     background-color: #615048;
+    outline: none;
   }
 
   .button-blue:hover,
-  .button-blue:focus {
+  .button-blue:focus,
+  .button-blue:focus-visible {
     background-color: #68a2ca;
   }
 
@@ -766,18 +769,17 @@
     background-color: #ffffff;
   }
 
-  .control-mark:focus,
-  .control-mark:focus-visible {
-    box-shadow: 0 0 0 3px #83b3d3;
-  }
-
   .control:hover {
     opacity: 60%;
   }
 
-
   .control:active {
     opacity: 30%;
+  }
+
+  .control:focus .control-mark,
+  .control:focus-visible .control-mark {
+    box-shadow: 0 0 0 3px #83b3d3;
   }
 
   .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -945,14 +947,22 @@
     line-height: 20px;
     font-weight: 700;
     background-color: rgba(131, 179, 211, 0);
-    padding: 8px 50px;
-    border: none;
+    padding: 5px 47px;
+    border: 3px solid transparent;
+    border-radius: 4px;
     margin-bottom: 32px;
+    box-sizing: border-box;
   }
 
   .button-reset:hover {
     background-color: transparent;
     opacity: 60%;
+  }
+
+  .button-reset:focus,
+  .button-reset:focus-visible {
+    background-color: transparent;
+    border-color: #83b3d3;
   }
 
   .button-reset:active {
@@ -962,10 +972,6 @@
 
   .button-reset:disabled {
     opacity: 10%;
-  }
-
-  .button-reset:focus {
-    background-color: transparent;
   }
 
   .results {
@@ -1009,7 +1015,8 @@
     box-sizing: border-box;
   }
 
-  .select-control:hover {
+  .select-control:hover,
+  .select-control:focus {
     border-color: #68a2ca;
   }
 
@@ -1215,7 +1222,9 @@
     border: none;
   }
 
-  .button-in-favorites:hover {
+  .button-in-favorites:hover,
+  .button-in-favorites:focus,
+  .button-in-favorites:focus-visible {
     background-color: #6c9e42;
   }
 
