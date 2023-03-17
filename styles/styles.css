@@ -607,7 +607,7 @@ input:disabled {
   outline: none;
 }
 
-.footer-social-icon:active path {
+.button-socials:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -650,10 +650,11 @@ input:disabled {
   outline: none;
 }
 
-.htmlacademy-link:hover path {
-  fill: #756157;
+.htmlacademy-logo {
+  outline: none;
 }
 
+.htmlacademy-link:hover path,
 .htmlacademy-link:focus path,
 .htmlacademy-link:focus-visible path {
   fill: #756157;
