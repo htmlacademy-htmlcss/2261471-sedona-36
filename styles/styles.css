@@ -806,8 +806,8 @@ input:disabled {
   opacity: 30%;
 }
 
-.control:focus .control-mark,
-.control:focus-visible .control-mark {
+.control:focus + .control-mark,
+.control:focus-visible + .control-mark {
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
@@ -834,6 +834,10 @@ input:disabled {
   background-color: #3f5e72;
   border-radius: 50%;
   content: "";
+}
+
+.control-input:focus + .control-mark {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .range-scale {
