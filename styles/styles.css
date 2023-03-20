@@ -1375,10 +1375,16 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
 .modal-close-button:hover {
   background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .modal-close-button:active {
